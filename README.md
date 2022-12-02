@@ -26,4 +26,4 @@
 #### Tests
 - `python manage.py test`
 #### Pull Requests
-- [PULL REQUEST LINK](https://github.com/amani51/django-models/pull/1)
+- [PULL REQUEST LINK](https://github.com/amani51/django-models/pull/2)
