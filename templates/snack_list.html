@@ -3,9 +3,13 @@
 {% block content %}
 <h1>  Snack Tracker Project</h1>
 <h2>Snacks List: </h2>
-<ul>
+
 {% for snack in object_list %}
-    <li>{{snack.name}} </li>
+<div class="card" id="project-3">
+        <h3>{{snack.name}}</h3>
+        <a href="{% url 'detail' snack.id%}">View detail</a>
+      </div>
+    
 {% endfor%}
 {% endblock content %}
-</ul>
+
