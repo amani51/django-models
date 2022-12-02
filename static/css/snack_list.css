@@ -12,7 +12,114 @@ h1{
 h2{
     padding: 20px 50px;
 }
-ul {
-    font-size: larger;
-    padding: 0px 100px;
+h3 {
+    font-size: 1.5rem;
+}
+
+.label {
+    font-size: 1.2rem;
+}
+.card {
+    width: 300px;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    background-color: #eaeae8;
+    text-align: center;
+    border: solid 2px #fcad02;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    float:left
+}
+
+.card a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #4092ad;
+    padding: .5rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px #c6c6c4;
+
+}
+.card a:hover {
+    background: #7a9fac;
+    color: #153641;
+  }
+i {
+    font-size: 2.2rem;
+    color: #fcad02;
+}
+
+/*  Display two cards per row at 576px breakpoint */
+@media (min-width: 300px) {
+
+    .cards-container  {
+/*  Set the display for the outer container to flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     }
+
+    .card {
+        /*  Set the flex-basis so that two cards are displayed in each row. */
+        flex-basis: calc(50% - 3rem);
+    }
+}
+
+/*  Display four cards across one row at 992px breakpoint */
+@media (min-width: 300px) {
+
+    .card {
+        /*  Set the flex-basis so four cards are displayed across one row. */
+        flex-basis: calc(25% - 3rem);
+    }
+}
+
+.card-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-container:hover .card {
+    cursor: pointer;
+  }
+  .card-container .card {
+    margin: 10px;
+    width: 200px;
+    float: left;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
+    background: #FFF;
+    -webkit-transition: .3s all ease;
+    transition: .15s all ease;
+  }
+  .card-container .card:hover {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.15);
+    transform: scale(1.025);
+    opacity: 1;
+    filter: grayscale(0);
+    transition: .35s all ease;
+  }
+  .card-container .card img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .card-container .card .content {
+    padding: 15px 20px;
+    background-color: #9bc1cf;
+  }
+  .card-container .card h3 {
+    font: 2.8rem/3.4rem 'Bree Serif', serif;
+    padding: 0;
+    margin: 0 0 10px;
+    letter-spacing: -.075rem
+  }
+  .card-container .card p {
+    color: rgb(53, 51, 51);
+    padding: 0;
+    margin: 0;
+    font: 400 1.6rem/2.2rem 'Open Sans script=all', sans-serif;
+  }

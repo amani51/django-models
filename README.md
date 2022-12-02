@@ -16,7 +16,7 @@
 
 #### How to initialize/run your application (where applicable)
 
-- `python manage.py runserver` 
+- `python manage.py runserver 8001` 
 
 #### How to use your library (where applicable)
 - you need to install requirements.txt by 
